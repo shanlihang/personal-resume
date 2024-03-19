@@ -1,0 +1,66 @@
+@font-face {
+    font-family: slh;
+    src: url('../font/slh.ttf');
+}
+
+.section{
+    font-family: slh;
+    background-color: #1e131d;
+}
+
+.fp-overflow{
+    width: 100%;
+    height: 100%;
+}
+
+.index .topmenu{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    color: #fff;
+}
+
+.topmenu .left{
+    width: 30%;
+    font-size: 48px;
+    font-weight: bold;
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+}
+.topmenu .right{
+    width: 70%;
+    font-size: 24px;
+    display: flex;
+}
+
+.right .menu{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.right .menu .item{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.right .menu .item:hover{
+    color: #20a162;
+    text-shadow:0 0 10px #8cc269,0 0 20px #8cc269,0 0 30px #8cc269;
+}
+
+.right .icon{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.index .box{
+    width: 100%;
+    height: 92%;
+    background-color: rgb(225, 0, 255);
+}
