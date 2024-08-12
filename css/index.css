@@ -72,7 +72,7 @@ header{
 }
 
 .fp-section:nth-child(3){
-    background-image: linear-gradient(128deg,#4def8e, #ffeb3a);
+    background-image: linear-gradient(128deg, #00f1f1,#2165ca);
 }
 
 .fp-section:nth-child(4){
