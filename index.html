@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>首页</title>
+    <title>编码经纬</title>
     <link rel="icon" href="./assets/logo.svg" type="image/svg+xml">
 
     <link rel="stylesheet" href="./css/fullpage.min.css">
@@ -16,13 +16,13 @@
 <body>
     <header>
         <div class="logo">
-            LOGO
+            <a href="#introduction">编码经纬</a>
         </div>
         <ul id="menu">
-            <li data-menuanchor="introduction"><a href="#1">First slide</a></li>
-            <li data-menuanchor="content"><a href="#2">Second slide</a></li>
-            <li data-menuanchor="footer"><a href="#3">Third slide</a></li>
-            <li data-menuanchor="four"><a href="#4">Fourth slide</a></li>
+            <li data-menuanchor="introduction"><a href="#1">启幕空间</a></li>
+            <li data-menuanchor="content"><a href="#2">智识星图</a></li>
+            <li data-menuanchor="footer"><a href="#3">灵感火花集</a></li>
+            <li data-menuanchor="four"><a href="#4">项目时光机</a></li>
         </ul>
         <div class="contact">
             <a href="https://github.com/shanlihang">
@@ -75,12 +75,28 @@
             navigationPosition: 'right',
             showActiveTooltip: true,
             afterRender: function () {
-                var fullpageWrapper = document.querySelector('#fullpage');
+                let fullpageWrapper = document.querySelector('#fullpage');
                 fullpageWrapper.addEventListener('wheel', function (event) {
                     if (event.deltaY > 0) {
                         fullpage_api.moveSectionDown();
                     } else {
                         fullpage_api.moveSectionUp();
+                    }
+                });
+                fullpageWrapper.addEventListener('keydown', function (event) {
+                    switch (event.key) {
+                        case 'ArrowUp':
+                            fullpage_api.moveSectionUp();
+                            break;
+                        case 'ArrowDown':
+                            fullpage_api.moveSectionDown();
+                            break;
+                        case 'ArrowLeft':
+                            fullpage_api.moveSlideLeft();
+                            break;
+                        case 'ArrowRight':
+                            fullpage_api.moveSlideRight();
+                            break;
                     }
                 });
             }
