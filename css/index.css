@@ -23,7 +23,7 @@ header {
     font-size: 28px;
 }
 
-.logo a{
+.logo a {
     color: #fff;
     text-decoration: none;
 }
@@ -85,4 +85,56 @@ header {
 
 .fp-section:nth-child(4) {
     background-image: linear-gradient(128deg, #fad0c4, #ff9d7e);
+}
+
+.index {
+    color: #fff;
+    position: relative;
+}
+
+.title {
+    font-size: 60px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.subTitle {
+    font-size: 24px;
+    font-weight: 400;
+    color: #ccc;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.tip {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 40px;
+    color: #ccc;
+}
+
+
+.down {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
 }
